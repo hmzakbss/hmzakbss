@@ -1,10 +1,8 @@
-## 💻 Languages
+## 🧠 Tech Stack
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=hmzakbss&layout=donut&theme=transparent&hide_border=true" />
+  <img src="https://skillicons.dev/icons?i=python,typescript,javascript,react,nextjs,flutter,dart,cs,dotnet,sql,fastapi,tensorflow&perline=6" />
 </p>
-
-
 
 # Hamza Akbaş
 
