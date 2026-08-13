@@ -1,3 +1,11 @@
+## 💻 Languages
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=hmzakbss&layout=donut&theme=transparent&hide_border=true" />
+</p>
+
+
+
 # Hamza Akbaş
 
 ### Information Systems Engineer · Software · AI · Data
