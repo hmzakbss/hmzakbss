@@ -1,9 +1,5 @@
-## 🧠 Tech Stack
-
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=python,typescript,javascript,react,nextjs,flutter,dart,cs,dotnet,sql,fastapi,tensorflow&perline=6" />
-</p>
-
+### 💻 En Çok Kullandığım Diller
+![Language Bubbles](./languages_bubble.svg)
 # Hamza Akbaş
 
 ### Information Systems Engineer · Software · AI · Data
