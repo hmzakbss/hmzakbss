@@ -10,7 +10,7 @@ headers = {"Authorization": f"token {TOKEN}"} if TOKEN else {}
 
 def get_language_stats():
     print("Repolar taranıyor...")
-    repos_url = f"https://api.github.com/users/{hmzakbss}/repos?per_page=100"
+    repos_url = f"https://api.github.com/users/hmzakbss/repos?per_page=100"
     repos = requests.get(repos_url, headers=headers).json()
     
     languages = {}
