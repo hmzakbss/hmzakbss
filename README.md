@@ -1,5 +1,9 @@
-### 💻 En Çok Kullandığım Diller
-![Language Bubbles](./languages_bubble.svg)
+<div align="center">
+
+<img src="./languages_bubble.svg" alt="GitHub Language Usage" width="900"/>
+
+</div>
+
 # Hamza Akbaş
 
 ### Information Systems Engineer · Software · AI · Data
