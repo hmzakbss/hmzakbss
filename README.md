@@ -64,7 +64,7 @@
 
 <div data-importer="stats" align="center">
   <img src="https://raw.githubusercontent.com/hmzakbss/hmzakbss/languages-output/languages.svg?locale=en&hide_title=false&layout=compact&card_width=320&langs_count=20&theme=dracula&hide_border=false&order=2&custom_title=Tech%20Stack" height="200" alt="languages graph"  />
-  <img src="https://raw.githubusercontent.com/hmzakbss/hmzakbss/activity-graph-output/activity-graph.svg?radius=15&theme=dracula&area=true&order=5&custom_title=Contribution%20Graph&hide_border=false&hide_title=true" height="100" alt="activity-graph graph"  />
+  <img src="https://raw.githubusercontent.com/hmzakbss/hmzakbss/activity-graph-output/activity-graph.svg?radius=15&theme=dracula&area=true&order=5&custom_title=Contribution%20Graph&hide_border=false&hide_title=true" height="200" alt="activity-graph graph"  />
 </div>
 
 ###
