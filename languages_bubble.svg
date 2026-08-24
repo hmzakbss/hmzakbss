@@ -17,7 +17,11 @@
 
         <stop
             offset="0%"
-            stop-color="#0B1220"/>
+            stop-color="#080B12"/>
+
+        <stop
+            offset="55%"
+            stop-color="#0D111A"/>
 
         <stop
             offset="100%"
@@ -27,33 +31,33 @@
 
     <filter
         id="shadow"
-        x="-50%"
-        y="-50%"
-        width="200%"
-        height="200%">
+        x="-60%"
+        y="-60%"
+        width="220%"
+        height="220%">
 
         <feDropShadow
             dx="0"
             dy="12"
-            stdDeviation="12"
+            stdDeviation="15"
             flood-color="#000000"
-            flood-opacity="0.30"/>
+            flood-opacity=".42"/>
 
     </filter>
 
     <filter
         id="softShadow"
-        x="-50%"
-        y="-50%"
-        width="200%"
-        height="200%">
+        x="-60%"
+        y="-60%"
+        width="220%"
+        height="220%">
 
         <feDropShadow
             dx="0"
-            dy="6"
-            stdDeviation="7"
+            dy="7"
+            stdDeviation="9"
             flood-color="#000000"
-            flood-opacity="0.25"/>
+            flood-opacity=".35"/>
 
     </filter>
 
@@ -61,21 +65,30 @@
 
 
 <rect
-    x="0"
-    y="0"
     width="1150"
     height="700"
-    rx="28"
+    rx="30"
     fill="url(#background)"
+/>
+
+<rect
+    x="1"
+    y="1"
+    width="1148"
+    height="698"
+    rx="29"
+    fill="none"
+    stroke="#FFFFFF"
+    stroke-opacity=".08"
 />
 
 
 <text
     x="575"
-    y="58"
+    y="53"
     text-anchor="middle"
     font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
-    font-size="18"
+    font-size="12"
     font-weight="700"
     letter-spacing="4"
     fill="#94A3B8">
@@ -84,14 +97,13 @@
 
 </text>
 
-
 <line
-    x1="430"
-    y1="82"
-    x2="720"
-    y2="82"
-    stroke="#334155"
-    stroke-width="2"
+    x1="475"
+    y1="72"
+    x2="675"
+    y2="72"
+    stroke="#FFFFFF"
+    stroke-opacity=".10"
     stroke-linecap="round"
 />
 
@@ -99,19 +111,19 @@
 <circle
     cx="500"
     cy="280"
-    r="140.0"
+    r="134.0"
     fill="#DA5B0B"
-    opacity="0.96"
+    opacity=".94"
     filter="url(#shadow)"
 />
 
 
 <circle
-    cx="460.8"
-    cy="240.8"
-    r="19.6"
+    cx="462.48"
+    cy="239.8"
+    r="16.08"
     fill="#FFFFFF"
-    opacity="0.10"
+    opacity=".10"
 />
 
 
@@ -120,7 +132,7 @@
     y="275"
     text-anchor="middle"
     font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
-    font-size="24"
+    font-size="25"
     font-weight="700"
     fill="#FFFFFF">
 
@@ -134,12 +146,12 @@
     y="301"
     text-anchor="middle"
     font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
-    font-size="17"
+    font-size="16"
     font-weight="500"
     fill="#FFFFFF"
-    opacity="0.85">
+    opacity=".82">
 
-    41.3%
+    40.7%
 
 </text>
 
@@ -147,19 +159,19 @@
 <circle
     cx="730"
     cy="235"
-    r="122.99790833539976"
+    r="117.53481649322924"
     fill="#00599C"
-    opacity="0.96"
+    opacity=".94"
     filter="url(#shadow)"
 />
 
 
 <circle
-    cx="695.5605856660881"
-    cy="200.56058566608806"
-    r="17.219707166955967"
+    cx="697.0902513818958"
+    cy="199.73955505203122"
+    r="14.104177979187508"
     fill="#FFFFFF"
-    opacity="0.10"
+    opacity=".10"
 />
 
 
@@ -168,7 +180,7 @@
     y="230"
     text-anchor="middle"
     font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
-    font-size="24"
+    font-size="25"
     font-weight="700"
     fill="#FFFFFF">
 
@@ -182,12 +194,12 @@
     y="256"
     text-anchor="middle"
     font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
-    font-size="17"
+    font-size="16"
     font-weight="500"
     fill="#FFFFFF"
-    opacity="0.85">
+    opacity=".82">
 
-    27.8%
+    27.5%
 
 </text>
 
@@ -195,19 +207,19 @@
 <circle
     cx="300"
     cy="225"
-    r="105.43112603543423"
+    r="100.52277468694683"
     fill="#3178C6"
-    opacity="0.96"
+    opacity=".94"
     filter="url(#shadow)"
 />
 
 
 <circle
-    cx="270.4792847100784"
-    cy="195.47928471007842"
-    r="14.760357644960793"
+    cx="271.8536230876549"
+    cy="194.84316759391595"
+    r="12.06273296243362"
     fill="#FFFFFF"
-    opacity="0.10"
+    opacity=".10"
 />
 
 
@@ -216,7 +228,7 @@
     y="220"
     text-anchor="middle"
     font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
-    font-size="24"
+    font-size="25"
     font-weight="700"
     fill="#FFFFFF">
 
@@ -230,12 +242,12 @@
     y="246"
     text-anchor="middle"
     font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
-    font-size="17"
+    font-size="16"
     font-weight="500"
     fill="#FFFFFF"
-    opacity="0.85">
+    opacity=".82">
 
-    16.7%
+    16.5%
 
 </text>
 
@@ -243,19 +255,19 @@
 <circle
     cx="700"
     cy="470"
-    r="75.89638982177689"
+    r="71.92071435372078"
     fill="#F7DF1E"
-    opacity="0.96"
+    opacity=".94"
     filter="url(#softShadow)"
 />
 
 
 <circle
-    cx="678.7490108499024"
-    cy="448.74901084990245"
-    r="10.625494575048766"
+    cx="679.8621999809582"
+    cy="448.42378569388376"
+    r="8.630485722446494"
     fill="#FFFFFF"
-    opacity="0.10"
+    opacity=".10"
 />
 
 
@@ -264,7 +276,7 @@
     y="465"
     text-anchor="middle"
     font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
-    font-size="18"
+    font-size="13"
     font-weight="700"
     fill="#111827">
 
@@ -275,15 +287,15 @@
 
 <text
     x="700"
-    y="488"
+    y="486"
     text-anchor="middle"
     font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
-    font-size="14"
+    font-size="11"
     font-weight="500"
     fill="#111827"
-    opacity="0.85">
+    opacity=".82">
 
-    4.4%
+    4.3%
 
 </text>
 
@@ -291,19 +303,19 @@
 <circle
     cx="380"
     cy="465"
-    r="74.34357395139924"
+    r="70.41693477398664"
     fill="#1572B6"
-    opacity="0.96"
+    opacity=".94"
     filter="url(#softShadow)"
 />
 
 
 <circle
-    cx="359.1837992936082"
-    cy="444.1837992936082"
-    r="10.408100353195895"
+    cx="360.28325826328376"
+    cy="443.874919567804"
+    r="8.450032172878396"
     fill="#FFFFFF"
-    opacity="0.10"
+    opacity=".10"
 />
 
 
@@ -312,7 +324,7 @@
     y="460"
     text-anchor="middle"
     font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
-    font-size="14"
+    font-size="13"
     font-weight="700"
     fill="#FFFFFF">
 
@@ -326,10 +338,10 @@
     y="481"
     text-anchor="middle"
     font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
-    font-size="12"
+    font-size="11"
     font-weight="500"
     fill="#FFFFFF"
-    opacity="0.85">
+    opacity=".82">
 
     3.9%
 
@@ -339,19 +351,19 @@
 <circle
     cx="875"
     cy="390"
-    r="65.73655048343338"
+    r="67.90037538895157"
     fill="#3776AB"
-    opacity="0.96"
+    opacity=".94"
     filter="url(#softShadow)"
 />
 
 
 <circle
-    cx="856.5937658646386"
-    cy="371.59376586463867"
-    r="9.203117067680674"
+    cx="855.9878948910936"
+    cy="369.62988738331455"
+    r="8.148045046674188"
     fill="#FFFFFF"
-    opacity="0.10"
+    opacity=".10"
 />
 
 
@@ -360,7 +372,7 @@
     y="385"
     text-anchor="middle"
     font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
-    font-size="14"
+    font-size="13"
     font-weight="700"
     fill="#FFFFFF">
 
@@ -374,12 +386,12 @@
     y="406"
     text-anchor="middle"
     font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
-    font-size="12"
+    font-size="11"
     font-weight="500"
     fill="#FFFFFF"
-    opacity="0.85">
+    opacity=".82">
 
-    2.0%
+    3.2%
 
 </text>
 
@@ -387,19 +399,19 @@
 <circle
     cx="165"
     cy="390"
-    r="60.195411494384544"
+    r="56.71555639456188"
     fill="#89E051"
-    opacity="0.96"
+    opacity=".94"
     filter="url(#softShadow)"
 />
 
 
 <circle
-    cx="148.14528478157231"
-    cy="373.14528478157234"
-    r="8.427357609213837"
+    cx="149.11964420952268"
+    cy="372.98533308163144"
+    r="6.805866767347426"
     fill="#FFFFFF"
-    opacity="0.10"
+    opacity=".10"
 />
 
 
@@ -408,7 +420,7 @@
     y="385"
     text-anchor="middle"
     font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
-    font-size="14"
+    font-size="13"
     font-weight="700"
     fill="#111827">
 
@@ -422,12 +434,12 @@
     y="406"
     text-anchor="middle"
     font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
-    font-size="12"
+    font-size="11"
     font-weight="500"
     fill="#111827"
-    opacity="0.85">
+    opacity=".82">
 
-    1.1%
+    1.0%
 
 </text>
 
@@ -435,19 +447,19 @@
 <circle
     cx="535"
     cy="535"
-    r="59.525974941738234"
+    r="56.06725994357808"
     fill="#64748B"
-    opacity="0.96"
+    opacity=".94"
     filter="url(#softShadow)"
 />
 
 
 <circle
-    cx="518.3327270163132"
-    cy="518.3327270163132"
-    r="8.333636491843354"
+    cx="519.3011672157982"
+    cy="518.1798220169266"
+    r="6.728071193229369"
     fill="#FFFFFF"
-    opacity="0.10"
+    opacity=".10"
 />
 
 
@@ -456,7 +468,7 @@
     y="530"
     text-anchor="middle"
     font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
-    font-size="14"
+    font-size="13"
     font-weight="700"
     fill="#FFFFFF">
 
@@ -470,10 +482,10 @@
     y="551"
     text-anchor="middle"
     font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
-    font-size="12"
+    font-size="11"
     font-weight="500"
     fill="#FFFFFF"
-    opacity="0.85">
+    opacity=".82">
 
     1.0%
 
@@ -483,19 +495,19 @@
 <circle
     cx="825"
     cy="570"
-    r="59.44728802460875"
+    r="55.991057876463216"
     fill="#64748B"
-    opacity="0.96"
+    opacity=".94"
     filter="url(#softShadow)"
 />
 
 
 <circle
-    cx="808.3547593531096"
-    cy="553.3547593531096"
-    r="8.322620323445227"
+    cx="809.3225037945903"
+    cy="553.202682637061"
+    r="6.7189269451755855"
     fill="#FFFFFF"
-    opacity="0.10"
+    opacity=".10"
 />
 
 
@@ -504,7 +516,7 @@
     y="565"
     text-anchor="middle"
     font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
-    font-size="14"
+    font-size="13"
     font-weight="700"
     fill="#FFFFFF">
 
@@ -518,12 +530,12 @@
     y="586"
     text-anchor="middle"
     font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
-    font-size="12"
+    font-size="11"
     font-weight="500"
     fill="#FFFFFF"
-    opacity="0.85">
+    opacity=".82">
 
-    1.0%
+    0.9%
 
 </text>
 
@@ -531,19 +543,19 @@
 <circle
     cx="255"
     cy="575"
-    r="58.853487592054385"
+    r="55.41600903651583"
     fill="#64748B"
-    opacity="0.96"
+    opacity=".94"
     filter="url(#softShadow)"
 />
 
 
 <circle
-    cx="238.52102347422476"
-    cy="558.5210234742248"
-    r="8.239488262887615"
+    cx="239.48351746977556"
+    cy="558.3751972890452"
+    r="6.6499210843819"
     fill="#FFFFFF"
-    opacity="0.10"
+    opacity=".10"
 />
 
 
@@ -552,7 +564,7 @@
     y="570"
     text-anchor="middle"
     font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
-    font-size="14"
+    font-size="13"
     font-weight="700"
     fill="#FFFFFF">
 
@@ -566,10 +578,10 @@
     y="591"
     text-anchor="middle"
     font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
-    font-size="12"
+    font-size="11"
     font-weight="500"
     fill="#FFFFFF"
-    opacity="0.85">
+    opacity=".82">
 
     0.9%
 
@@ -579,19 +591,19 @@
 <circle
     cx="1000"
     cy="260"
-    r="49.30690353237804"
+    r="46.1708960524082"
     fill="#E34F26"
-    opacity="0.96"
+    opacity=".94"
     filter="url(#softShadow)"
 />
 
 
 <circle
-    cx="986.1940670109342"
-    cy="246.19406701093413"
-    r="6.902966494532926"
+    cx="987.0721491053257"
+    cy="246.14873118427755"
+    r="5.540507526288984"
     fill="#FFFFFF"
-    opacity="0.10"
+    opacity=".10"
 />
 
 
@@ -600,7 +612,7 @@
     y="255"
     text-anchor="middle"
     font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
-    font-size="14"
+    font-size="13"
     font-weight="700"
     fill="#FFFFFF">
 
@@ -614,10 +626,10 @@
     y="276"
     text-anchor="middle"
     font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
-    font-size="12"
+    font-size="11"
     font-weight="500"
     fill="#FFFFFF"
-    opacity="0.85">
+    opacity=".82">
 
     0.1%
 
@@ -626,10 +638,10 @@
 
 <text
     x="575"
-    y="670"
+    y="650"
     text-anchor="middle"
     font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
-    font-size="12"
+    font-size="11"
     font-weight="500"
     fill="#64748B">
 
