@@ -56,16 +56,33 @@
 
 ###
 
-<div data-importer="image" align="center">
-  <img data-importer="image" height="175" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcXZ6OTRqN3NrcG5tY3QxMWhpbm1ocno0a3ltMjYzOTlyNWwydW1rayZlcD12MV9naWZzX3NlYXJjaCZjdD1n/qgQUggAC3Pfv687qPC/giphy.gif"  />
+<div align="center">
+  <img
+    height="175"
+    src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcXZ6OTRqN3NrcG5tY3QxMWhpbm1ocno0a3ltMjYzOTlyNWwydW1rayZlcD12MV9naWZzX3NlYXJjaCZjdD1n/qgQUggAC3Pfv687qPC/giphy.gif"
+  />
 </div>
 
-###
+<br>
 
-<div data-importer="stats" align="center">
-  <img src="https://raw.githubusercontent.com/hmzakbss/hmzakbss/languages-output/languages.svg?locale=en&hide_title=false&layout=compact&card_width=320&langs_count=20&theme=dracula&hide_border=false&order=2&custom_title=Tech%20Stack" height="200" alt="languages graph"  />
-  <img src="https://raw.githubusercontent.com/hmzakbss/hmzakbss/activity-graph-output/activity-graph.svg?radius=15&theme=dracula&area=true&order=5&custom_title=Contribution%20Graph&hide_border=false&hide_title=true" height="200" alt="activity-graph graph"  />
-</div>
+<table align="center">
+  <tr>
+    <td>
+      <img
+        src="https://raw.githubusercontent.com/hmzakbss/hmzakbss/languages-output/languages.svg?locale=en&hide_title=false&layout=compact&card_width=320&langs_count=20&theme=dracula&hide_border=false&order=2&custom_title=Tech%20Stack"
+        height="200"
+        alt="languages graph"
+      />
+    </td>
+    <td>
+      <img
+        src="https://raw.githubusercontent.com/hmzakbss/hmzakbss/activity-graph-output/activity-graph.svg?radius=15&theme=dracula&area=true&order=5&custom_title=Contribution%20Graph&hide_border=false&hide_title=true"
+        height="200"
+        alt="activity graph"
+      />
+    </td>
+  </tr>
+</table>
 
 ###
 
