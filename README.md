@@ -1,138 +1,78 @@
-<div align="center">
+<h1 data-importer="text" align="center">Hello, I’m Hamza Akbaş</h1>
 
-# Hamza Akbaş
+###
 
-### Information Systems Engineer · AI · Software · Data
+<br clear="both">
 
-**I build practical systems at the intersection of software engineering, artificial intelligence, and data.**
+<h4 data-importer="text" align="center">I build practical systems at the intersection of software engineering, artificial intelligence, and data.</h4>
 
-<br/>
+###
 
-<a href="https://www.linkedin.com/in/hmzakbss/">
-  <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-</a>
-<a href="https://www.kaggle.com/hamzaakbas">
-  <img src="https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white" alt="Kaggle" />
-</a>
-<a href="mailto:hmzakbss@gmail.com">
-  <img src="https://img.shields.io/badge/Email-18181B?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
-</a>
-
+<div data-importer="socials" align="center">
+  <a href="https://www.linkedin.com/in/hmzakbss/" target="_blank">
+    <img src="https://img.shields.io/static/v1?message=In&logo=linkedin&label=linked&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="linkedin logo"  />
+  </a>
+  <a href="mailto:hmzakbss@gmail.com.com" target="_blank">
+    <img src="https://img.shields.io/static/v1?message=mail&logo=gmail&label=&color=D14836&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="gmail logo"  />
+  </a>
+  <a href="https://www.instagram.com/hmzakbss" target="_blank">
+    <img src="https://img.shields.io/static/v1?message=ig&logo=instagram&label=&color=E4405F&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="instagram logo"  />
+  </a>
 </div>
 
-<br/>
+###
 
-<div align="center">
-
-<img
-  src="./languages_bubble.gif"
-  alt="GitHub Language Usage"
-  width="900"
-/>
-
+<div data-importer="techs" align="center">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" height="60" alt="csharp logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" height="60" alt="cplusplus logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original-wordmark.svg" height="60" alt="docker logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" height="60" alt="git logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/anaconda/anaconda-original-wordmark.svg" height="60" alt="anaconda logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" height="60" alt="html5 logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="60" alt="javascript logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original-wordmark.svg" height="60" alt="redis logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original-wordmark.svg" height="60" alt="jupyter logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" height="60" alt="nextjs logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="60" alt="typescript logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg" height="60" alt="visualstudio logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" height="60" alt="mysql logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" height="60" alt="nodejs logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" height="60" alt="python logo"  />
 </div>
 
----
+###
 
-## About
-
-I am an **Information Systems Engineer** focused on building software that solves real problems.
-
-My interests sit around **Artificial Intelligence, Generative AI, Retrieval-Augmented Generation, Machine Learning, Data Science, and Software Engineering**. I enjoy taking an idea from exploration to a working system — from data and retrieval pipelines to user-facing applications.
-
-I care about understanding the problem first, choosing the right architecture, and building solutions that are practical, maintainable, and useful.
-
----
-
-## Selected Work
-
-<table>
-<tr>
-<td width="50%" valign="top">
-
-### ORES Chatbot
-
-A source-grounded RAG assistant built around a product catalog and store policies. The system combines semantic retrieval, authenticated conversations, source attribution, and controlled responses.
-
-**[Live Demo ↗](https://oreschatbot.vercel.app) · [Repository ↗](https://github.com/hmzakbss/oreschatbot)**
-
-</td>
-<td width="50%" valign="top">
-
-### RAG Yazar Chatbot
-
-A retrieval-augmented assistant designed for writers, combining semantic search with a conversational interface to work with a curated story knowledge base.
-
-**[Repository ↗](https://github.com/hmzakbss/RAG-YAZAR-CHATBOT)**
-
-</td>
-</tr>
-
-<tr>
-<td width="50%" valign="top">
-
-### Legal AI Research
-
-An ongoing exploration into applying retrieval and OCR pipelines to legal decisions, with the goal of finding semantically similar precedents from large collections of documents.
-
-**[Repository ↗](https://github.com/hmzakbss/private-legal)**
-
-</td>
-<td width="50%" valign="top">
-
-### Breast Cancer CNN
-
-A deep learning project exploring image classification with convolutional neural networks on histopathology imagery, including augmentation and model evaluation.
-
-**[Repository ↗](https://github.com/hmzakbss/breast-cancer-cnn)**
-
-</td>
-</tr>
-</table>
-
----
-
-## What I Care About
-
-<div align="center">
-
-|                                 |                                         |                                    |
-| :-----------------------------: | :-------------------------------------: | :--------------------------------: |
-|            **Build**            |                **Learn**                |             **Improve**            |
-| Turn ideas into working systems | Explore new approaches through projects | Refine solutions through iteration |
-
+<div data-importer="image" align="center">
+  <img data-importer="image" height="175" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcXZ6OTRqN3NrcG5tY3QxMWhpbm1ocno0a3ltMjYzOTlyNWwydW1rayZlcD12MV9naWZzX3NlYXJjaCZjdD1n/qgQUggAC3Pfv687qPC/giphy.gif"  />
 </div>
 
-<br/>
+###
 
-I prefer learning by building: experimenting with an idea, understanding what works, identifying what does not, and improving the system until it becomes genuinely useful.
-
----
-
-## Beyond the Code
-
-* 🎓 Information Systems Engineering
-* 🤖 Exploring practical AI and intelligent applications
-* 📊 Interested in data-driven problem solving
-* 🧠 Curious about retrieval, reasoning, and applied machine learning
-* 🚀 Building projects that turn concepts into usable products
-
----
-
-## Connect
-
-<div align="center">
-
-If you are interested in **AI, software engineering, data, or building practical products**, feel free to reach out.
-
-<br/>
-
-<a href="https://www.linkedin.com/in/hmzakbss/">LinkedIn</a>
-  ·   <a href="https://www.kaggle.com/hamzaakbas">Kaggle</a>
-  ·   <a href="mailto:hmzakbss@gmail.com">Email</a>
-
-<br/><br/>
-
-<i>Curious by nature. Building with purpose.</i>
-
+<div data-importer="stats" align="center">
+  <img src="https://raw.githubusercontent.com/hmzakbss/hmzakbss/languages-output/languages.svg?locale=en&hide_title=false&layout=compact&card_width=320&langs_count=20&theme=dracula&hide_border=false&order=2&custom_title=Tech%20Stack" height="200" alt="languages graph"  />
+  <img src="https://raw.githubusercontent.com/hmzakbss/hmzakbss/activity-graph-output/activity-graph.svg?radius=15&theme=dracula&area=true&order=5&custom_title=Contribution%20Graph&hide_border=false&hide_title=true" height="100" alt="activity-graph graph"  />
 </div>
+
+###
+
+<picture data-importer="pacman">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/hmzakbss/hmzakbss/pacman-output/pacman-contribution-graph-dark.svg?game=pacman">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/hmzakbss/hmzakbss/pacman-output/pacman-contribution-graph.svg?game=pacman">
+  <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/hmzakbss/hmzakbss/pacman-output/pacman-contribution-graph.svg?game=pacman">
+</picture>
+
+###
