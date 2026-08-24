@@ -5,64 +5,46 @@
     width="1150"
     height="700">
 
-
 <defs>
 
-    <linearGradient
-        id="background"
-        x1="0"
-        y1="0"
-        x2="1"
-        y2="1">
+<linearGradient
+    id="background"
+    x1="0"
+    y1="0"
+    x2="1"
+    y2="1">
 
-        <stop
-            offset="0%"
-            stop-color="#080B12"/>
+    <stop
+        offset="0%"
+        stop-color="#080B12"/>
 
-        <stop
-            offset="55%"
-            stop-color="#0D111A"/>
+    <stop
+        offset="55%"
+        stop-color="#0D111A"/>
 
-        <stop
-            offset="100%"
-            stop-color="#111827"/>
+    <stop
+        offset="100%"
+        stop-color="#111827"/>
 
-    </linearGradient>
+</linearGradient>
 
-    <filter
-        id="shadow"
-        x="-60%"
-        y="-60%"
-        width="220%"
-        height="220%">
+<filter
+    id="shadow"
+    x="-40%"
+    y="-40%"
+    width="180%"
+    height="180%">
 
-        <feDropShadow
-            dx="0"
-            dy="12"
-            stdDeviation="15"
-            flood-color="#000000"
-            flood-opacity=".42"/>
+    <feDropShadow
+        dx="0"
+        dy="8"
+        stdDeviation="9"
+        flood-color="#000000"
+        flood-opacity=".35"/>
 
-    </filter>
-
-    <filter
-        id="softShadow"
-        x="-60%"
-        y="-60%"
-        width="220%"
-        height="220%">
-
-        <feDropShadow
-            dx="0"
-            dy="7"
-            stdDeviation="9"
-            flood-color="#000000"
-            flood-opacity=".35"/>
-
-    </filter>
+</filter>
 
 </defs>
-
 
 <rect
     width="1150"
@@ -82,18 +64,17 @@
     stroke-opacity=".08"
 />
 
-
 <text
     x="575"
     y="53"
     text-anchor="middle"
-    font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
+    font-family="Inter, Arial, sans-serif"
     font-size="12"
     font-weight="700"
     letter-spacing="4"
     fill="#94A3B8">
 
-    LANGUAGES I WORK WITH
+LANGUAGES I WORK WITH
 
 </text>
 
@@ -104,26 +85,15 @@
     y2="72"
     stroke="#FFFFFF"
     stroke-opacity=".10"
-    stroke-linecap="round"
 />
 
 
 <circle
     cx="500"
     cy="280"
-    r="134.0"
+    r="187.0"
     fill="#DA5B0B"
-    opacity=".94"
     filter="url(#shadow)"
-/>
-
-
-<circle
-    cx="462.48"
-    cy="239.8"
-    r="16.08"
-    fill="#FFFFFF"
-    opacity=".10"
 />
 
 
@@ -131,27 +101,25 @@
     x="500"
     y="275"
     text-anchor="middle"
-    font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
-    font-size="25"
+    font-family="Inter, Arial, sans-serif"
+    font-size="23"
     font-weight="700"
     fill="#FFFFFF">
 
-    Jupyter Notebook
+Jupyter Notebook
 
 </text>
 
-
 <text
     x="500"
-    y="301"
+    y="300"
     text-anchor="middle"
-    font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
-    font-size="16"
-    font-weight="500"
+    font-family="Inter, Arial, sans-serif"
+    font-size="15"
     fill="#FFFFFF"
-    opacity=".82">
+    opacity=".85">
 
-    40.7%
+40.7%
 
 </text>
 
@@ -159,19 +127,9 @@
 <circle
     cx="730"
     cy="235"
-    r="117.53481649322924"
+    r="168.20821447596813"
     fill="#00599C"
-    opacity=".94"
     filter="url(#shadow)"
-/>
-
-
-<circle
-    cx="697.0902513818958"
-    cy="199.73955505203122"
-    r="14.104177979187508"
-    fill="#FFFFFF"
-    opacity=".10"
 />
 
 
@@ -179,27 +137,25 @@
     x="730"
     y="230"
     text-anchor="middle"
-    font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
-    font-size="25"
+    font-family="Inter, Arial, sans-serif"
+    font-size="23"
     font-weight="700"
     fill="#FFFFFF">
 
-    C++
+C++
 
 </text>
 
-
 <text
     x="730"
-    y="256"
+    y="255"
     text-anchor="middle"
-    font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
-    font-size="16"
-    font-weight="500"
+    font-family="Inter, Arial, sans-serif"
+    font-size="15"
     fill="#FFFFFF"
-    opacity=".82">
+    opacity=".85">
 
-    27.5%
+27.5%
 
 </text>
 
@@ -207,19 +163,9 @@
 <circle
     cx="300"
     cy="225"
-    r="100.52277468694683"
+    r="148.79229719705887"
     fill="#3178C6"
-    opacity=".94"
     filter="url(#shadow)"
-/>
-
-
-<circle
-    cx="271.8536230876549"
-    cy="194.84316759391595"
-    r="12.06273296243362"
-    fill="#FFFFFF"
-    opacity=".10"
 />
 
 
@@ -227,27 +173,25 @@
     x="300"
     y="220"
     text-anchor="middle"
-    font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
-    font-size="25"
+    font-family="Inter, Arial, sans-serif"
+    font-size="18"
     font-weight="700"
     fill="#FFFFFF">
 
-    TypeScript
+TypeScript
 
 </text>
 
-
 <text
     x="300"
-    y="246"
+    y="244"
     text-anchor="middle"
-    font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
-    font-size="16"
-    font-weight="500"
+    font-family="Inter, Arial, sans-serif"
+    font-size="14"
     fill="#FFFFFF"
-    opacity=".82">
+    opacity=".85">
 
-    16.5%
+16.5%
 
 </text>
 
@@ -255,19 +199,9 @@
 <circle
     cx="700"
     cy="470"
-    r="71.92071435372078"
+    r="116.14864138196393"
     fill="#F7DF1E"
-    opacity=".94"
-    filter="url(#softShadow)"
-/>
-
-
-<circle
-    cx="679.8621999809582"
-    cy="448.42378569388376"
-    r="8.630485722446494"
-    fill="#FFFFFF"
-    opacity=".10"
+    filter="url(#shadow)"
 />
 
 
@@ -275,27 +209,25 @@
     x="700"
     y="465"
     text-anchor="middle"
-    font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
+    font-family="Inter, Arial, sans-serif"
     font-size="13"
     font-weight="700"
     fill="#111827">
 
-    JavaScript
+JavaScript
 
 </text>
-
 
 <text
     x="700"
     y="486"
     text-anchor="middle"
-    font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
+    font-family="Inter, Arial, sans-serif"
     font-size="11"
-    font-weight="500"
     fill="#111827"
-    opacity=".82">
+    opacity=".85">
 
-    4.3%
+4.3%
 
 </text>
 
@@ -303,19 +235,9 @@
 <circle
     cx="380"
     cy="465"
-    r="70.41693477398664"
+    r="114.43237120944127"
     fill="#1572B6"
-    opacity=".94"
-    filter="url(#softShadow)"
-/>
-
-
-<circle
-    cx="360.28325826328376"
-    cy="443.874919567804"
-    r="8.450032172878396"
-    fill="#FFFFFF"
-    opacity=".10"
+    filter="url(#shadow)"
 />
 
 
@@ -323,27 +245,25 @@
     x="380"
     y="460"
     text-anchor="middle"
-    font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
+    font-family="Inter, Arial, sans-serif"
     font-size="13"
     font-weight="700"
     fill="#FFFFFF">
 
-    CSS
+CSS
 
 </text>
-
 
 <text
     x="380"
     y="481"
     text-anchor="middle"
-    font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
+    font-family="Inter, Arial, sans-serif"
     font-size="11"
-    font-weight="500"
     fill="#FFFFFF"
-    opacity=".82">
+    opacity=".85">
 
-    3.9%
+3.9%
 
 </text>
 
@@ -351,19 +271,9 @@
 <circle
     cx="875"
     cy="390"
-    r="67.90037538895157"
+    r="111.5602110417382"
     fill="#3776AB"
-    opacity=".94"
-    filter="url(#softShadow)"
-/>
-
-
-<circle
-    cx="855.9878948910936"
-    cy="369.62988738331455"
-    r="8.148045046674188"
-    fill="#FFFFFF"
-    opacity=".10"
+    filter="url(#shadow)"
 />
 
 
@@ -371,27 +281,25 @@
     x="875"
     y="385"
     text-anchor="middle"
-    font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
+    font-family="Inter, Arial, sans-serif"
     font-size="13"
     font-weight="700"
     fill="#FFFFFF">
 
-    Python
+Python
 
 </text>
-
 
 <text
     x="875"
     y="406"
     text-anchor="middle"
-    font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
+    font-family="Inter, Arial, sans-serif"
     font-size="11"
-    font-weight="500"
     fill="#FFFFFF"
-    opacity=".82">
+    opacity=".85">
 
-    3.2%
+3.2%
 
 </text>
 
@@ -399,19 +307,9 @@
 <circle
     cx="165"
     cy="390"
-    r="56.71555639456188"
+    r="98.79492849379345"
     fill="#89E051"
-    opacity=".94"
-    filter="url(#softShadow)"
-/>
-
-
-<circle
-    cx="149.11964420952268"
-    cy="372.98533308163144"
-    r="6.805866767347426"
-    fill="#FFFFFF"
-    opacity=".10"
+    filter="url(#shadow)"
 />
 
 
@@ -419,27 +317,25 @@
     x="165"
     y="385"
     text-anchor="middle"
-    font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
+    font-family="Inter, Arial, sans-serif"
     font-size="13"
     font-weight="700"
     fill="#111827">
 
-    Shell
+Shell
 
 </text>
-
 
 <text
     x="165"
     y="406"
     text-anchor="middle"
-    font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
+    font-family="Inter, Arial, sans-serif"
     font-size="11"
-    font-weight="500"
     fill="#111827"
-    opacity=".82">
+    opacity=".85">
 
-    1.0%
+1.0%
 
 </text>
 
@@ -447,19 +343,9 @@
 <circle
     cx="535"
     cy="535"
-    r="56.06725994357808"
+    r="98.05502493560542"
     fill="#64748B"
-    opacity=".94"
-    filter="url(#softShadow)"
-/>
-
-
-<circle
-    cx="519.3011672157982"
-    cy="518.1798220169266"
-    r="6.728071193229369"
-    fill="#FFFFFF"
-    opacity=".10"
+    filter="url(#shadow)"
 />
 
 
@@ -467,27 +353,25 @@
     x="535"
     y="530"
     text-anchor="middle"
-    font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
+    font-family="Inter, Arial, sans-serif"
     font-size="13"
     font-weight="700"
     fill="#FFFFFF">
 
-    CMake
+CMake
 
 </text>
-
 
 <text
     x="535"
     y="551"
     text-anchor="middle"
-    font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
+    font-family="Inter, Arial, sans-serif"
     font-size="11"
-    font-weight="500"
     fill="#FFFFFF"
-    opacity=".82">
+    opacity=".85">
 
-    1.0%
+1.0%
 
 </text>
 
@@ -495,19 +379,9 @@
 <circle
     cx="825"
     cy="570"
-    r="55.991057876463216"
+    r="97.96805518509389"
     fill="#64748B"
-    opacity=".94"
-    filter="url(#softShadow)"
-/>
-
-
-<circle
-    cx="809.3225037945903"
-    cy="553.202682637061"
-    r="6.7189269451755855"
-    fill="#FFFFFF"
-    opacity=".10"
+    filter="url(#shadow)"
 />
 
 
@@ -515,27 +389,25 @@
     x="825"
     y="565"
     text-anchor="middle"
-    font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
+    font-family="Inter, Arial, sans-serif"
     font-size="13"
     font-weight="700"
     fill="#FFFFFF">
 
-    PLpgSQL
+PLpgSQL
 
 </text>
-
 
 <text
     x="825"
     y="586"
     text-anchor="middle"
-    font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
+    font-family="Inter, Arial, sans-serif"
     font-size="11"
-    font-weight="500"
     fill="#FFFFFF"
-    opacity=".82">
+    opacity=".85">
 
-    0.9%
+0.9%
 
 </text>
 
@@ -543,19 +415,9 @@
 <circle
     cx="255"
     cy="575"
-    r="55.41600903651583"
-    fill="#64748B"
-    opacity=".94"
-    filter="url(#softShadow)"
-/>
-
-
-<circle
-    cx="239.48351746977556"
-    cy="558.3751972890452"
-    r="6.6499210843819"
-    fill="#FFFFFF"
-    opacity=".10"
+    r="97.31174944384958"
+    fill="#012456"
+    filter="url(#shadow)"
 />
 
 
@@ -563,75 +425,25 @@
     x="255"
     y="570"
     text-anchor="middle"
-    font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
+    font-family="Inter, Arial, sans-serif"
     font-size="13"
     font-weight="700"
     fill="#FFFFFF">
 
-    PowerShell
+PowerShell
 
 </text>
-
 
 <text
     x="255"
     y="591"
     text-anchor="middle"
-    font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
+    font-family="Inter, Arial, sans-serif"
     font-size="11"
-    font-weight="500"
     fill="#FFFFFF"
-    opacity=".82">
+    opacity=".85">
 
-    0.9%
-
-</text>
-
-
-<circle
-    cx="1000"
-    cy="260"
-    r="46.1708960524082"
-    fill="#E34F26"
-    opacity=".94"
-    filter="url(#softShadow)"
-/>
-
-
-<circle
-    cx="987.0721491053257"
-    cy="246.14873118427755"
-    r="5.540507526288984"
-    fill="#FFFFFF"
-    opacity=".10"
-/>
-
-
-<text
-    x="1000"
-    y="255"
-    text-anchor="middle"
-    font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
-    font-size="13"
-    font-weight="700"
-    fill="#FFFFFF">
-
-    HTML
-
-</text>
-
-
-<text
-    x="1000"
-    y="276"
-    text-anchor="middle"
-    font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
-    font-size="11"
-    font-weight="500"
-    fill="#FFFFFF"
-    opacity=".82">
-
-    0.1%
+0.9%
 
 </text>
 
@@ -640,12 +452,11 @@
     x="575"
     y="650"
     text-anchor="middle"
-    font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
+    font-family="Inter, Arial, sans-serif"
     font-size="11"
-    font-weight="500"
     fill="#64748B">
 
-    Based on public + private non-forked repositories
+Based on public + private non-forked repositories
 
 </text>
 
