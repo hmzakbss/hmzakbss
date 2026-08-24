@@ -24,7 +24,11 @@
 
 <div align="center">
 
-<img src="./languages_bubble.svg" alt="GitHub Language Usage" width="900" />
+<img
+  src="./languages_bubble.gif"
+  alt="GitHub Language Usage"
+  width="900"
+/>
 
 </div>
 
