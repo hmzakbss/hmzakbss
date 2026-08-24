@@ -7,7 +7,7 @@ from xml.sax.saxutils import escape
 
 
 # ============================================================
-# CONFIGURATION
+# CONFIG
 # ============================================================
 
 USERNAME = "hmzakbss"
@@ -24,70 +24,56 @@ HEADERS = {
 }
 
 
-# Kaç farklı dil gösterilecek?
-MAX_LANGUAGES = 14
-
-
-# GIF ayarları
-GIF_WIDTH = 900
-GIF_HEIGHT = 520
-
-FPS = 12
-
-# 6 saniyelik animasyon
-DURATION_SECONDS = 6
-
-FRAME_COUNT = FPS * DURATION_SECONDS
-
-
 # ============================================================
-# LANGUAGE COLORS
+# LANGUAGE SETTINGS
 # ============================================================
+
+MAX_LANGUAGES = 10
+
 
 LANGUAGE_COLORS = {
 
     "Python": "#3776AB",
-
     "JavaScript": "#F7DF1E",
-
     "TypeScript": "#3178C6",
-
     "C#": "#239120",
-
     "C++": "#00599C",
-
     "C": "#A8B9CC",
-
     "Java": "#B07219",
-
     "Dart": "#00B4AB",
-
     "HTML": "#E34F26",
-
     "CSS": "#1572B6",
-
     "SQL": "#336791",
-
     "Shell": "#89E051",
-
+    "PowerShell": "#012456",
     "Jupyter Notebook": "#DA5B0B",
-
     "Kotlin": "#A97BFF",
-
     "Go": "#00ADD8",
-
     "Rust": "#DEA584",
-
     "PHP": "#777BB4",
-
     "Ruby": "#701516",
-
     "Swift": "#F05138",
-
     "R": "#198CE7",
-
     "PLpgSQL": "#64748B",
 }
+
+
+# ============================================================
+# HIGH RESOLUTION GIF
+# ============================================================
+
+# 2x retina resolution
+WIDTH = 1800
+HEIGHT = 1040
+
+# README'de 900px gösterilecek
+DISPLAY_WIDTH = 900
+
+FPS = 8
+
+DURATION_SECONDS = 6
+
+FRAME_COUNT = FPS * DURATION_SECONDS
 
 
 # ============================================================
@@ -123,7 +109,7 @@ def get_font(size, bold=False):
 
 
 # ============================================================
-# GITHUB DATA
+# GITHUB API
 # ============================================================
 
 def get_language_stats():
@@ -173,7 +159,7 @@ def get_language_stats():
                 "Unknown"
             )
 
-            # Forkları dahil etme
+            # Forkları atla
             if repo.get("fork"):
 
                 print(
@@ -224,7 +210,9 @@ def get_language_stats():
                 language_response.json()
             )
 
-            for language, bytes_count in repo_languages.items():
+            for language, bytes_count in (
+                repo_languages.items()
+            ):
 
                 languages[language] = (
                     languages.get(language, 0)
@@ -244,7 +232,7 @@ def get_language_stats():
     ):
 
         print(
-            f"{language:<20} "
+            f"{language:<20}"
             f"{bytes_count:,} bytes"
         )
 
@@ -256,7 +244,7 @@ def get_language_stats():
 
 
 # ============================================================
-# LANGUAGE CALCULATIONS
+# CALCULATIONS
 # ============================================================
 
 def calculate_percentages(languages):
@@ -280,6 +268,10 @@ def calculate_percentages(languages):
 
 def calculate_radii(values):
 
+    if not values:
+
+        return []
+
     max_value = max(values)
 
     radii = []
@@ -290,9 +282,10 @@ def calculate_radii(values):
             value / max_value
         )
 
+        # Daha kontrollü bubble boyutları
         radius = (
-            42 +
-            normalized * 92
+            82 +
+            normalized * 105
         )
 
         radii.append(radius)
@@ -301,7 +294,7 @@ def calculate_radii(values):
 
 
 # ============================================================
-# COLOR HELPERS
+# COLORS
 # ============================================================
 
 def hex_to_rgb(hex_color):
@@ -347,11 +340,6 @@ def create_svg(languages):
 
     if not languages:
 
-        print(
-            "SVG oluşturulamadı: "
-            "dil verisi yok."
-        )
-
         return
 
     percentages = (
@@ -379,6 +367,7 @@ def create_svg(languages):
     height = 700
 
     positions = [
+
         (500, 280),
         (730, 235),
         (300, 225),
@@ -389,87 +378,59 @@ def create_svg(languages):
         (535, 535),
         (825, 570),
         (255, 575),
-        (1000, 260),
-        (85, 245),
-        (1030, 535),
-        (110, 545),
     ]
 
     svg = []
 
     svg.append(
-        f'''
+        f"""
 <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 {width} {height}"
     width="{width}"
     height="{height}">
-'''
-    )
 
-    svg.append(
-        """
 <defs>
 
-    <linearGradient
-        id="background"
-        x1="0"
-        y1="0"
-        x2="1"
-        y2="1">
+<linearGradient
+    id="background"
+    x1="0"
+    y1="0"
+    x2="1"
+    y2="1">
 
-        <stop
-            offset="0%"
-            stop-color="#080B12"/>
+    <stop
+        offset="0%"
+        stop-color="#080B12"/>
 
-        <stop
-            offset="55%"
-            stop-color="#0D111A"/>
+    <stop
+        offset="55%"
+        stop-color="#0D111A"/>
 
-        <stop
-            offset="100%"
-            stop-color="#111827"/>
+    <stop
+        offset="100%"
+        stop-color="#111827"/>
 
-    </linearGradient>
+</linearGradient>
 
-    <filter
-        id="shadow"
-        x="-60%"
-        y="-60%"
-        width="220%"
-        height="220%">
+<filter
+    id="shadow"
+    x="-40%"
+    y="-40%"
+    width="180%"
+    height="180%">
 
-        <feDropShadow
-            dx="0"
-            dy="12"
-            stdDeviation="15"
-            flood-color="#000000"
-            flood-opacity=".42"/>
+    <feDropShadow
+        dx="0"
+        dy="8"
+        stdDeviation="9"
+        flood-color="#000000"
+        flood-opacity=".35"/>
 
-    </filter>
-
-    <filter
-        id="softShadow"
-        x="-60%"
-        y="-60%"
-        width="220%"
-        height="220%">
-
-        <feDropShadow
-            dx="0"
-            dy="7"
-            stdDeviation="9"
-            flood-color="#000000"
-            flood-opacity=".35"/>
-
-    </filter>
+</filter>
 
 </defs>
-"""
-    )
 
-    svg.append(
-        """
 <rect
     width="1150"
     height="700"
@@ -487,22 +448,18 @@ def create_svg(languages):
     stroke="#FFFFFF"
     stroke-opacity=".08"
 />
-"""
-    )
 
-    svg.append(
-        """
 <text
     x="575"
     y="53"
     text-anchor="middle"
-    font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
+    font-family="Inter, Arial, sans-serif"
     font-size="12"
     font-weight="700"
     letter-spacing="4"
     fill="#94A3B8">
 
-    LANGUAGES I WORK WITH
+LANGUAGES I WORK WITH
 
 </text>
 
@@ -513,7 +470,6 @@ def create_svg(languages):
     y2="72"
     stroke="#FFFFFF"
     stroke-opacity=".10"
-    stroke-linecap="round"
 />
 """
     )
@@ -534,16 +490,10 @@ def create_svg(languages):
             "#64748B"
         )
 
-        text_color = (
+        foreground = (
             text_color_for_background(
                 color
             )
-        )
-
-        shadow = (
-            "shadow"
-            if radius >= 100
-            else "softShadow"
         )
 
         svg.append(
@@ -553,30 +503,17 @@ def create_svg(languages):
     cy="{y}"
     r="{radius}"
     fill="{color}"
-    opacity=".94"
-    filter="url(#{shadow})"
+    filter="url(#shadow)"
 />
 """
         )
 
-        svg.append(
-            f"""
-<circle
-    cx="{x - radius * .28}"
-    cy="{y - radius * .30}"
-    r="{radius * .12}"
-    fill="#FFFFFF"
-    opacity=".10"
-/>
-"""
-        )
+        if radius >= 160:
 
-        if radius >= 100:
+            language_size = 23
+            percentage_size = 15
 
-            language_size = 25
-            percentage_size = 16
-
-        elif radius >= 75:
+        elif radius >= 120:
 
             language_size = 18
             percentage_size = 14
@@ -596,30 +533,25 @@ def create_svg(languages):
     x="{x}"
     y="{y - 5}"
     text-anchor="middle"
-    font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
+    font-family="Inter, Arial, sans-serif"
     font-size="{language_size}"
     font-weight="700"
-    fill="{text_color}">
+    fill="{foreground}">
 
-    {safe_language}
+{safe_language}
 
 </text>
-"""
-        )
 
-        svg.append(
-            f"""
 <text
     x="{x}"
     y="{y + percentage_size + 5}"
     text-anchor="middle"
-    font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
+    font-family="Inter, Arial, sans-serif"
     font-size="{percentage_size}"
-    font-weight="500"
-    fill="{text_color}"
-    opacity=".82">
+    fill="{foreground}"
+    opacity=".85">
 
-    {percentage:.1f}%
+{percentage:.1f}%
 
 </text>
 """
@@ -631,19 +563,16 @@ def create_svg(languages):
     x="575"
     y="650"
     text-anchor="middle"
-    font-family="Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
+    font-family="Inter, Arial, sans-serif"
     font-size="11"
-    font-weight="500"
     fill="#64748B">
 
-    Based on public + private non-forked repositories
+Based on public + private non-forked repositories
 
 </text>
-"""
-    )
 
-    svg.append(
-        "</svg>"
+</svg>
+"""
     )
 
     with open(
@@ -662,7 +591,7 @@ def create_svg(languages):
 
 
 # ============================================================
-# ANIMATED GIF
+# BACKGROUND
 # ============================================================
 
 def create_background():
@@ -670,45 +599,58 @@ def create_background():
     image = Image.new(
         "RGBA",
         (
-            GIF_WIDTH,
-            GIF_HEIGHT
+            WIDTH,
+            HEIGHT
         ),
-        (8, 11, 18, 255)
+        (
+            7,
+            10,
+            17,
+            255
+        )
     )
 
     draw = ImageDraw.Draw(
         image
     )
 
-    # Ortadaki hafif mavi glow
+    # Çok daha kontrollü merkez glow
     for radius in range(
-        300,
-        0,
-        -8
+        360,
+        30,
+        -15
     ):
 
+        strength = (
+            1 -
+            radius / 360
+        )
+
         alpha = int(
-            20 *
-            (1 - radius / 300)
+            7 * strength
         )
 
         draw.ellipse(
             (
-                GIF_WIDTH / 2 - radius,
-                GIF_HEIGHT / 2 - radius,
-                GIF_WIDTH / 2 + radius,
-                GIF_HEIGHT / 2 + radius
+                WIDTH / 2 - radius,
+                HEIGHT / 2 - radius,
+                WIDTH / 2 + radius,
+                HEIGHT / 2 + radius
             ),
             fill=(
-                50,
-                90,
-                150,
+                35,
+                75,
+                125,
                 alpha
             )
         )
 
     return image
 
+
+# ============================================================
+# TEXT
+# ============================================================
 
 def draw_centered_text(
     draw,
@@ -724,21 +666,23 @@ def draw_centered_text(
         font=font
     )
 
-    text_width = (
-        bbox[2] - bbox[0]
+    width = (
+        bbox[2] -
+        bbox[0]
     )
 
-    text_height = (
-        bbox[3] - bbox[1]
+    height = (
+        bbox[3] -
+        bbox[1]
     )
 
     draw.text(
         (
             position[0] -
-            text_width / 2,
+            width / 2,
 
             position[1] -
-            text_height / 2
+            height / 2
         ),
         text,
         font=font,
@@ -746,7 +690,11 @@ def draw_centered_text(
     )
 
 
-def draw_glowing_bubble(
+# ============================================================
+# BUBBLE
+# ============================================================
+
+def draw_bubble(
     image,
     x,
     y,
@@ -758,19 +706,22 @@ def draw_glowing_bubble(
         color
     )
 
-    # Glow layer
-    glow_layer = Image.new(
+    # -----------------------------------------
+    # Very subtle glow
+    # -----------------------------------------
+
+    glow = Image.new(
         "RGBA",
         image.size,
         (0, 0, 0, 0)
     )
 
     glow_draw = ImageDraw.Draw(
-        glow_layer
+        glow
     )
 
     glow_radius = (
-        radius * 1.35
+        radius * 1.10
     )
 
     glow_draw.ellipse(
@@ -784,45 +735,47 @@ def draw_glowing_bubble(
             rgb[0],
             rgb[1],
             rgb[2],
-            35
+            22
         )
     )
 
-    glow_layer = (
-        glow_layer.filter(
-            ImageFilter.GaussianBlur(
-                16
-            )
+    glow = glow.filter(
+        ImageFilter.GaussianBlur(
+            10
         )
     )
 
     image.alpha_composite(
-        glow_layer
+        glow
     )
 
     draw = ImageDraw.Draw(
         image
     )
 
+    # -----------------------------------------
     # Shadow
-    shadow_offset = 8
+    # -----------------------------------------
 
     draw.ellipse(
         (
-            x - radius + 3,
-            y - radius + shadow_offset,
-            x + radius + 3,
-            y + radius + shadow_offset
+            x - radius + 4,
+            y - radius + 10,
+            x + radius + 4,
+            y + radius + 10
         ),
         fill=(
             0,
             0,
             0,
-            65
+            70
         )
     )
 
+    # -----------------------------------------
     # Bubble
+    # -----------------------------------------
+
     draw.ellipse(
         (
             x - radius,
@@ -834,29 +787,31 @@ def draw_glowing_bubble(
             rgb[0],
             rgb[1],
             rgb[2],
-            245
+            250
         ),
         outline=(
             255,
             255,
             255,
-            45
+            60
         ),
-        width=2
+        width=3
     )
 
-    # Highlight
-    highlight_radius = max(
-        5,
+    # -----------------------------------------
+    # Small highlight
+    # -----------------------------------------
+
+    highlight = (
         radius * .12
     )
 
     draw.ellipse(
         (
-            x - radius * .45,
-            y - radius * .50,
-            x - radius * .20,
-            y - radius * .25
+            x - radius * .42,
+            y - radius * .48,
+            x - radius * .42 + highlight,
+            y - radius * .48 + highlight
         ),
         fill=(
             255,
@@ -867,6 +822,10 @@ def draw_glowing_bubble(
     )
 
 
+# ============================================================
+# ANIMATED GIF
+# ============================================================
+
 def create_animated_gif(
     languages
 ):
@@ -874,8 +833,7 @@ def create_animated_gif(
     if not languages:
 
         print(
-            "GIF oluşturulamadı: "
-            "dil verisi yok."
+            "GIF oluşturulamadı."
         )
 
         return
@@ -901,60 +859,66 @@ def create_animated_gif(
         values
     )
 
-    # GIF için ekran pozisyonları
-    positions = [
-        (450, 265),
-        (650, 205),
-        (260, 200),
-        (650, 375),
-        (295, 385),
-        (765, 290),
-        (135, 315),
-        (490, 410),
-        (820, 420),
-        (205, 465),
-        (760, 115),
-        (130, 125),
-        (830, 175),
-        (80, 420),
-    ]
+    # -----------------------------------------
+    # Orbit configuration
+    # -----------------------------------------
+
+    center_x = WIDTH // 2
+    center_y = 530
+
+    OUTER_RX = 470
+    OUTER_RY = 290
+
+    INNER_RX = 350
+    INNER_RY = 220
+
+    # -----------------------------------------
+    # Fonts - 2x retina
+    # -----------------------------------------
 
     fonts = {
-        "large": get_font(
-            18,
-            bold=True
-        ),
 
-        "medium": get_font(
-            13,
-            bold=True
-        ),
+        "title":
+            get_font(
+                24,
+                bold=True
+            ),
 
-        "small": get_font(
-            10,
-            bold=True
-        ),
+        "large":
+            get_font(
+                36,
+                bold=True
+            ),
 
-        "percentage": get_font(
-            10,
-            bold=False
-        ),
+        "medium":
+            get_font(
+                26,
+                bold=True
+            ),
 
-        "title": get_font(
-            12,
-            bold=True
-        ),
+        "small":
+            get_font(
+                21,
+                bold=True
+            ),
 
-        "footer": get_font(
-            9,
-            bold=False
-        ),
+        "percentage":
+            get_font(
+                20,
+                bold=False
+            ),
+
+        "footer":
+            get_font(
+                18,
+                bold=False
+            ),
     }
 
     frames = []
 
     # ========================================================
-    # FRAME LOOP
+    # ANIMATION
     # ========================================================
 
     for frame_number in range(
@@ -975,57 +939,61 @@ def create_animated_gif(
         )
 
         # ====================================================
-        # STARS / PARTICLES
+        # PARTICLES
         # ====================================================
 
-        for star in range(45):
+        for particle in range(
+            55
+        ):
 
-            star_x = (
-                star * 137 + 23
-            ) % GIF_WIDTH
+            x = (
+                particle * 137 +
+                41
+            ) % WIDTH
 
-            star_y = (
-                star * 83 + 31
-            ) % GIF_HEIGHT
+            y = (
+                particle * 83 +
+                37
+            ) % HEIGHT
 
             twinkle = (
                 math.sin(
                     progress *
                     math.tau *
-                    1.4 +
-                    star
+                    1.2 +
+                    particle
                 ) + 1
             ) / 2
 
             alpha = int(
-                45 +
-                80 * twinkle
+                35 +
+                55 * twinkle
             )
 
             draw.ellipse(
                 (
-                    star_x,
-                    star_y,
-                    star_x + 2,
-                    star_y + 2
+                    x,
+                    y,
+                    x + 3,
+                    y + 3
                 ),
                 fill=(
-                    180,
-                    205,
+                    190,
+                    210,
                     235,
                     alpha
                 )
             )
 
         # ====================================================
-        # HEADER
+        # TITLE
         # ====================================================
 
         draw_centered_text(
             draw,
             (
-                GIF_WIDTH / 2,
-                36
+                WIDTH / 2,
+                70
             ),
             "LANGUAGES I WORK WITH",
             fonts["title"],
@@ -1038,58 +1006,54 @@ def create_animated_gif(
 
         draw.line(
             (
-                340,
-                56,
-                560,
-                56
+                670,
+                110,
+                1130,
+                110
             ),
             fill=(
                 51,
                 65,
-                85
+                85,
+                255
             ),
-            width=1
+            width=2
         )
 
         # ====================================================
-        # ORBIT CENTER
+        # ORBITS
         # ====================================================
 
-        center_x = 450
-        center_y = 265
-
-        # Ana yörünge
         draw.ellipse(
             (
-                center_x - 235,
-                center_y - 145,
-                center_x + 235,
-                center_y + 145
+                center_x - OUTER_RX,
+                center_y - OUTER_RY,
+                center_x + OUTER_RX,
+                center_y + OUTER_RY
             ),
             outline=(
                 100,
                 130,
                 170,
-                45
+                55
             ),
-            width=1
+            width=2
         )
 
-        # İç yörünge
         draw.ellipse(
             (
-                center_x - 175,
-                center_y - 110,
-                center_x + 175,
-                center_y + 110
+                center_x - INNER_RX,
+                center_y - INNER_RY,
+                center_x + INNER_RX,
+                center_y + INNER_RY
             ),
             outline=(
                 100,
                 130,
                 170,
-                32
+                38
             ),
-            width=1
+            width=2
         )
 
         # ====================================================
@@ -1100,6 +1064,10 @@ def create_animated_gif(
             sorted_languages[1:]
         )
 
+        count = len(
+            orbit_languages
+        )
+
         for index, (
             language,
             percentage
@@ -1108,51 +1076,50 @@ def create_animated_gif(
         ):
 
             if index >= len(
-                positions
+                radii
             ) - 1:
 
                 break
 
-            color = (
-                LANGUAGE_COLORS.get(
-                    language,
-                    "#64748B"
-                )
+            color = LANGUAGE_COLORS.get(
+                language,
+                "#64748B"
             )
 
-            # Dış ve iç yörüngeler
+            # First 3 languages
+            # outer orbit
             if index < 3:
 
-                orbit_x = 235
-                orbit_y = 145
+                orbit_x = OUTER_RX
+                orbit_y = OUTER_RY
 
             else:
 
-                orbit_x = 175
-                orbit_y = 110
+                orbit_x = INNER_RX
+                orbit_y = INNER_RY
 
-            # Her bubble farklı fazda
-            angle = (
+            # Evenly distribute
+            base_angle = (
                 math.tau *
                 index /
                 max(
-                    1,
-                    len(
-                        orbit_languages
-                    )
+                    count,
+                    1
                 )
             )
 
-            rotation_speed = (
-                0.18
+            # Slow orbital motion
+            speed = (
+                0.035
                 if index % 2 == 0
-                else -0.18
+                else -0.035
             )
 
-            angle += (
+            angle = (
+                base_angle +
                 progress *
                 math.tau *
-                rotation_speed
+                speed
             )
 
             x = (
@@ -1167,14 +1134,14 @@ def create_animated_gif(
                 orbit_y
             )
 
-            radius = radii[
-                index + 1
-            ]
+            radius = (
+                radii[index + 1]
+            )
 
-            # Hafif pulse
+            # Very subtle pulse
             pulse = (
                 1 +
-                0.025 *
+                0.018 *
                 math.sin(
                     progress *
                     math.tau +
@@ -1184,7 +1151,7 @@ def create_animated_gif(
 
             radius *= pulse
 
-            draw_glowing_bubble(
+            draw_bubble(
                 image,
                 x,
                 y,
@@ -1198,13 +1165,17 @@ def create_animated_gif(
                 else "#FFFFFF"
             )
 
-            if radius >= 90:
+            draw = ImageDraw.Draw(
+                image
+            )
+
+            if radius >= 150:
 
                 language_font = (
                     fonts["large"]
                 )
 
-            elif radius >= 65:
+            elif radius >= 110:
 
                 language_font = (
                     fonts["medium"]
@@ -1216,15 +1187,11 @@ def create_animated_gif(
                     fonts["small"]
                 )
 
-            draw = ImageDraw.Draw(
-                image
-            )
-
             draw_centered_text(
                 draw,
                 (
                     x,
-                    y - 5
+                    y - 8
                 ),
                 language,
                 language_font,
@@ -1235,7 +1202,7 @@ def create_animated_gif(
                 draw,
                 (
                     x,
-                    y + 14
+                    y + 35
                 ),
                 f"{percentage:.1f}%",
                 fonts["percentage"],
@@ -1246,16 +1213,12 @@ def create_animated_gif(
         # CENTER BUBBLE
         # ====================================================
 
-        center_language = (
-            sorted_languages[0]
-        )
-
         center_name = (
-            center_language[0]
+            sorted_languages[0][0]
         )
 
         center_percentage = (
-            center_language[1]
+            sorted_languages[0][1]
         )
 
         center_color = (
@@ -1269,21 +1232,17 @@ def create_animated_gif(
             radii[0]
         )
 
-        # Merkez pulse
-        center_pulse = (
+        # Small pulse
+        center_radius *= (
             1 +
-            0.035 *
+            0.015 *
             math.sin(
                 progress *
                 math.tau
             )
         )
 
-        center_radius *= (
-            center_pulse
-        )
-
-        draw_glowing_bubble(
+        draw_bubble(
             image,
             center_x,
             center_y,
@@ -1299,7 +1258,7 @@ def create_animated_gif(
             draw,
             (
                 center_x,
-                center_y - 8
+                center_y - 12
             ),
             center_name,
             fonts["large"],
@@ -1310,7 +1269,7 @@ def create_animated_gif(
             draw,
             (
                 center_x,
-                center_y + 19
+                center_y + 45
             ),
             f"{center_percentage:.1f}%",
             fonts["medium"],
@@ -1324,8 +1283,8 @@ def create_animated_gif(
         draw_centered_text(
             draw,
             (
-                GIF_WIDTH / 2,
-                GIF_HEIGHT - 22
+                WIDTH / 2,
+                HEIGHT - 42
             ),
             "Based on public + private non-forked repositories",
             fonts["footer"],
@@ -1336,31 +1295,73 @@ def create_animated_gif(
             )
         )
 
+        # ====================================================
+        # STORE FRAME
+        # ====================================================
+
         frames.append(
-            image.convert("RGB")
+            image.convert(
+                "RGB"
+            )
         )
 
     # ========================================================
-    # SAVE GIF
+    # GIF PALETTE
+    # ========================================================
+
+    print(
+        "GIF frame'leri optimize ediliyor..."
+    )
+
+    optimized_frames = []
+
+    for frame in frames:
+
+        palette_frame = (
+            frame.quantize(
+                colors=256,
+                method=Image.Quantize.MEDIANCUT,
+                dither=Image.Dither.FLOYDSTEINBERG
+            )
+        )
+
+        optimized_frames.append(
+            palette_frame
+        )
+
+    # ========================================================
+    # SAVE
     # ========================================================
 
     output = (
         "languages_bubble.gif"
     )
 
-    frames[0].save(
+    optimized_frames[0].save(
         output,
         save_all=True,
-        append_images=frames[1:],
+        append_images=optimized_frames[1:],
         duration=int(
             1000 / FPS
         ),
         loop=0,
-        optimize=True
+        optimize=True,
+        disposal=2
+    )
+
+    file_size = (
+        os.path.getsize(
+            output
+        ) / (1024 * 1024)
     )
 
     print(
-        f"{output} başarıyla oluşturuldu!"
+        f"\n{output} oluşturuldu."
+    )
+
+    print(
+        f"GIF boyutu: "
+        f"{file_size:.2f} MB"
     )
 
 
@@ -1374,12 +1375,10 @@ if __name__ == "__main__":
         get_language_stats()
     )
 
-    # Statik SVG'yi de üret
     create_svg(
         languages
     )
 
-    # Animasyonlu GIF üret
     create_animated_gif(
         languages
     )
