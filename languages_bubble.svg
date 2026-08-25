@@ -271,7 +271,7 @@ CSS
 <circle
     cx="875"
     cy="390"
-    r="111.5602110417382"
+    r="111.76541742238723"
     fill="#3776AB"
     filter="url(#shadow)"
 />
@@ -299,7 +299,7 @@ Python
     fill="#FFFFFF"
     opacity=".85">
 
-3.2%
+3.3%
 
 </text>
 
